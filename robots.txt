@@ -1,0 +1,44 @@
+# Robots.txt para juridia.com.br
+# Startup - Diretório completo indexável
+
+# Permitir todos os bots em todo o site
+User-agent: *
+Allow: /
+
+# Bots específicos do Google (otimização extra)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+# Outros bots importantes
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Crawl-delay para evitar sobrecarga (opcional)
+Crawl-delay: 1

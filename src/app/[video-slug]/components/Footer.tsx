@@ -4,6 +4,7 @@ export function Footer() {
   return (
     <div className="relative flex w-full flex-col items-center justify-between gap-4 bg-white px-8 pb-4 text-primary lg:h-32 lg:flex-row">
       <Image
+        // onClick={() => window.open("whatsappnumber", "_blank")}
         src="/logo-dark.png"
         alt=""
         width={500}
@@ -15,6 +16,9 @@ export function Footer() {
         Copyright © 2025
       </span>
       <Image
+        onClick={() =>
+          window.open("https://www.executivosdigital.com.br/", "_blank")
+        }
         src="/logoEx.png"
         alt=""
         width={500}

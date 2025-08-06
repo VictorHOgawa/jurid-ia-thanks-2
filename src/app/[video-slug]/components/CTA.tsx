@@ -41,7 +41,15 @@ export function CTA() {
               Libere seu potencial jurídico com uma IA que otimiza tarefas e
               acelera processos de forma prática e eficiente.
             </span>
-            <button className="w-max rounded-xl border border-white bg-white px-8 py-4 font-semibold text-secondary transition duration-200 hover:-translate-y-0.5 hover:scale-[1] hover:bg-secondary hover:text-white">
+            <button
+              onClick={() =>
+                window.open(
+                  "https://app.juridia.com.br/sign-in?register",
+                  "_blank",
+                )
+              }
+              className="w-max rounded-xl border border-white bg-white px-8 py-4 font-semibold text-secondary transition duration-200 hover:-translate-y-0.5 hover:scale-[1] hover:bg-secondary hover:text-white"
+            >
               Utilizar Agora
             </button>
           </div>
@@ -68,7 +76,10 @@ export function CTA() {
               Clique abaixo para conhecer como o Júri de A pode transformar sua
               rotina jurídica e aumentar sua produtividade.
             </span>
-            <button className="w-max rounded-xl border border-secondary bg-secondary px-8 py-4 font-semibold text-white transition duration-200 hover:-translate-y-0.5 hover:scale-[1] hover:bg-white hover:text-secondary">
+            <button
+              // onClick={() => window.open("whatsappnumber", "_blank")}
+              className="w-max rounded-xl border border-secondary bg-secondary px-8 py-4 font-semibold text-white transition duration-200 hover:-translate-y-0.5 hover:scale-[1] hover:bg-white hover:text-secondary"
+            >
               Converse com nosso time
             </button>
           </div>
