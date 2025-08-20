@@ -49,7 +49,12 @@ export function Partners() {
           height={200}
           quality={100}
           className="h-10 w-max cursor-pointer object-contain hover:animate-shake"
-          // onClick={() => window.open("whatsappnumber", "_blank")}
+          onClick={() =>
+            window.open(
+              " https://wa.me/5541984080011?text=Quero%20conhecer%20melhor%20a%20Jurid%20IA%2C%20pode%20me%20apresentar%3F",
+              "_blank",
+            )
+          }
         />
         {/* <Image
           src="/linkedin.svg"

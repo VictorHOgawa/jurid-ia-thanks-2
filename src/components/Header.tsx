@@ -4,7 +4,12 @@ import Image from "next/image";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 
-export function Header() {
+interface HeroProps {
+  isPlaying: boolean;
+  setIsPlaying: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export function Header({ isPlaying, setIsPlaying }: HeroProps) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
@@ -20,7 +25,7 @@ export function Header() {
         />
         <div className="hidden items-center justify-between lg:flex lg:gap-8">
           <button
-            // onClick={() => window.open("whatsappnumber", "_blank")}
+            onClick={() => setIsPlaying(true)}
             className="rounded-xl border border-primary bg-transparent px-4 py-2 text-primary transition duration-200 hover:-translate-y-0.5 hover:scale-[1] hover:bg-primary hover:text-white hover:shadow-md"
           >
             Conhecer

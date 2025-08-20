@@ -25,7 +25,7 @@ export function Projects() {
             isVisible1.isIntersecting && "translate-x-0 opacity-100",
           )}
         >
-          Veja como o Jurid.IA transforma a Advocacia
+          Veja como a Jurid.IA transforma a Advocacia
         </span>
         <span
           className={twMerge(
@@ -43,10 +43,12 @@ export function Projects() {
         <div className="col-span-3 flex items-center justify-center rounded-3xl bg-opacity-30 bg-[url('/project-2.jpg')] bg-cover bg-center bg-no-repeat lg:col-span-1" />
       </div>
       <button
-        // onClick={() => window.open("whatsappnumber", "_blank")}
+        onClick={() =>
+          window.open("https://app.juridia.com.br/sign-in", "_blank")
+        }
         className="rounded-3xl border border-primary bg-primary px-8 py-4 font-semibold text-white transition duration-200 hover:-translate-y-0.5 hover:scale-[1] hover:bg-transparent hover:text-primary lg:w-max"
       >
-        Conheça Como Simplificar Sua Advocacia
+        Comece A Simplificar Sua Rotina
       </button>
     </div>
   );

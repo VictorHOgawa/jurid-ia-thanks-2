@@ -1,14 +1,17 @@
 "use client";
 import { ArrowRight } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { twMerge } from "tailwind-merge";
 import useOnScreen from "../utils/IsOnScreen";
 
-export function Hero() {
+interface HeroProps {
+  isPlaying: boolean;
+  setIsPlaying: React.Dispatch<React.SetStateAction<boolean>>;
+}
+export function Hero({ isPlaying, setIsPlaying }: HeroProps) {
   const ref1 = useRef<HTMLDivElement>(null);
   const isVisible1 = useOnScreen(ref1);
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
     if (isPlaying && videoRef.current) {

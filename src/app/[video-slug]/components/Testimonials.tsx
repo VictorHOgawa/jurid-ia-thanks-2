@@ -1,6 +1,5 @@
 "use client";
 import useOnScreen from "@/src/utils/IsOnScreen";
-import { Play } from "lucide-react";
 import Image from "next/image";
 import { useRef } from "react";
 import { twMerge } from "tailwind-merge";
@@ -25,16 +24,19 @@ export function Testimonials() {
               O Que os Advogados Estão Dizendo:
             </span>
             <span className="text-sm lg:w-1/3 lg:text-xl">
-              Uma revolução na prática jurídica. O Jurid.IA transforma tarefas
+              Uma revolução na prática jurídica. A Jurid.IA transforma tarefas
               complexas em soluções rápidas, economizando tempo e aumentando a
               produtividade dos advogados.
             </span>
           </div>
           <div className="flex h-full w-full flex-col overflow-hidden rounded-3xl border-2 border-primary lg:h-3/5 lg:flex-row">
             <div className="flex h-72 w-full items-center justify-center border-r border-primary bg-white lg:h-full lg:w-[48%]">
-              <div className="rounded-full bg-primary/50 p-2">
-                <Play className="text-white" size={24} />
-              </div>
+              <iframe
+                className="h-full w-full"
+                src="/videos/1.mp4"
+                title="Vídeo de Testemunho"
+                allowFullScreen
+              />
             </div>
             <div className="flex h-2/3 w-full flex-col justify-center gap-4 border-l border-primary bg-white/80 p-4 text-primary lg:h-full lg:w-[52%] lg:gap-8 lg:p-8">
               <Image
@@ -46,7 +48,7 @@ export function Testimonials() {
                 className="h-max w-11/12 object-contain xl:h-20 xl:w-max"
               />
               <span className="w-11/12 text-sm lg:text-xl">
-                “O Jurid.IA transformou minha rotina. Agora, consigo concluir
+                “A Jurid.IA transformou minha rotina. Agora, consigo concluir
                 tarefas jurídicas em minutos, ganhando tempo para focar no que
                 realmente importa: os meus clientes.”
               </span>

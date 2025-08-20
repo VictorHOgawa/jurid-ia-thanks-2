@@ -29,7 +29,7 @@ export function CTA() {
               isVisible1.isIntersecting && "translate-x-0 opacity-100",
             )}
           >
-            Aproveite a Inteligência Artificial do JuridIA
+            Aproveite a Inteligência Artificial da Jurid.IA
           </span>
           <div
             className={twMerge(
@@ -73,7 +73,7 @@ export function CTA() {
             )}
           >
             <span className="lg:text-xl">
-              Clique abaixo para conhecer como o Júri de A pode transformar sua
+              Clique abaixo para conhecer como a Jurid.IA pode transformar sua
               rotina jurídica e aumentar sua produtividade.
             </span>
             <button
